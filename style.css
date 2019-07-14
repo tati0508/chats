@@ -5,6 +5,18 @@
   text-align: center;
 }
 
+.loginWrap {
+  margin : 0 auto;
+  width : 250px;
+  text-align : left;
+}
+
+.loginWrap a {
+  border : thin solid black;
+  text-decoration : none;
+  color : black;
+}
+
 .messagesWrap {
   margin : 0 auto;
   width : 250px;
@@ -19,4 +31,16 @@
 #result {
   margin : 0 5px;
   text-align : left;
+}
+
+/* ここからCreate Account */
+.createAccount {
+  width : 300px;
+  margin : 0 auto;
+  text-align : right;
+}
+
+.createAccount input {
+  margin-left : 10px;
+  margin-bottom : 7px;
 }

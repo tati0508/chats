@@ -40,9 +40,13 @@
 		// print("not okay" . "<br/>");
 		if(isset($numbers)){
 			foreach($numbers as $key){
-				print($key);
+				$stmt = $dbh->prepare(' select messages.message, users.name as user_name from messages join users on messages.user_id = users.id where messages.id = ?;');
+				$stmt->execute([$key]);
+				while($rowM = $stmt->fetch(PDO::FETCH_ASSOC)){
+					print($rowM['user_name'] . " : " . $rowM['message'] . "<br/>");
+				}
+				$_SESSION['old'] = $numbers;
 			}
-			$_SESSION['old'] = $numbers;
 		} else {
 			$stmt = $dbh->prepare(
 							'insert into messages(message, user_id)' .

@@ -16,8 +16,3 @@ create table messages(
   user_id int not null,
   foreign key(user_id) references users(id)
 );
-
-create table numbers(
-  id int not null auto_increment primary key,
-  number int not null
-);
