@@ -1,0 +1,22 @@
+.contentsWrap {
+  min-width : 250px;
+  max-width : 720px;
+  margin : 0 auto;
+  text-align: center;
+}
+
+.messagesWrap {
+  margin : 0 auto;
+  width : 250px;
+  min-height : 500px;
+  border : 1px solid black;
+}
+
+.messagesWrap h2 {
+  border-bottom: 2px solid black;
+}
+
+#result {
+  margin : 0 5px;
+  text-align : left;
+}
