@@ -38,7 +38,7 @@
 ?>
 		<script type="text/javascript" src="ajax.js"></script>
 		
-		<h1>chat</h1>
+		<h1>Chats</h1>
 
 		<iframe src="form.html" width='250' height="50" id='iframe'></iframe>
 		

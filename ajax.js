@@ -13,7 +13,7 @@ function ansyncSend() {
       var span = document.createElement('span');
       span.innerHTML = req.responseText;
       result.appendChild(span);
-      // console.log(req.responseText);
+      console.log(req.responseText);
         
     }
   }

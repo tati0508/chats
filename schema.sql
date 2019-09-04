@@ -16,3 +16,11 @@ create table messages(
   user_id int not null,
   foreign key(user_id) references users(id)
 );
+
+create table rooms(
+  id int not null auto_increment primary key,
+  user_id int not null,
+  partner_id int not null,
+  foreign key(user_id) references users(id),
+  foreign key(partner_id) references users(id)
+);

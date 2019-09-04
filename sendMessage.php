@@ -48,11 +48,12 @@
 				$_SESSION['old'] = $numbers;
 			}
 		} else {
+
 			$stmt = $dbh->prepare(
 							'insert into messages(message, user_id)' .
 							'values("さぁChatsを始めましょう！", 1)'
 						);
 	
-		$stmt->execute();
+			$stmt->execute();
 		}
   }
